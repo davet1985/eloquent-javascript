@@ -62,3 +62,17 @@ function makeGreaterThanTen(pTest) {
   alert(greaterThanTen(pTest));
 }
 
+function range(pNum) {
+  var new_array = [];
+  for (var i=0; i<pNum; i++) {
+    new_array[i] = i;
+  }
+  alert(new_array.length);
+  //return new_array;
+}
+
+function startsWith(pString, pTest) {
+  //note, this is a case sensitive check
+  alert(pString.slice(0, pTest.length) == pTest);
+}
+
