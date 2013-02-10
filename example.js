@@ -76,3 +76,7 @@ function startsWith(pString, pTest) {
   alert(pString.slice(0, pTest.length) == pTest);
 }
 
+function catsName(pParagraph) {
+  var names = pParagraph.slice(pParagraph.indexOf(":")+2).split(", ");
+  alert(names);
+}
