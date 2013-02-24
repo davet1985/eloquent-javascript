@@ -62,6 +62,7 @@ function makeGreaterThanTen(pTest) {
   alert(greaterThanTen(pTest));
 }
 
+/** CHAPTER 4 */
 function range(pNum) {
   var new_array = [];
   for (var i=0; i<pNum; i++) {
@@ -79,4 +80,42 @@ function startsWith(pString, pTest) {
 function catsName(pParagraph) {
   var names = pParagraph.slice(pParagraph.indexOf(":")+2).split(", ");
   alert(names);
+}
+
+function showCurrentDate() {
+  var today = new Date();
+  alert(today);
+}
+
+function extractDate(pParagraph) {
+  var date = pParagraph.slice(5, 15).split('/');
+  var date2 = new Date(date[2], date[1]-1, date[0]);
+  alert(date2);
+}
+
+function between(pString, pBeginning, pEnd) {
+  var start = pString.indexOf(pBeginning) + pBeginning.length;
+  var end = pString.indexOf(pEnd, start);
+  alert(pString.slice(start, end));
+}
+
+function range(start, end) {
+  var new_array = [];
+  if (arguments.length < 2) {
+    end = start;
+    start = 0;
+  }
+  for (var i=start; i<=end; i++) {
+    new_array.push(i);
+  }
+  alert(new_array);
+  return new_array;
+}
+
+function sum(numArray) {
+  var total=0;
+  for (var i=0; i<numArray.length; i++) {
+    total+=numArray[i];
+  }
+  alert(total);
 }
