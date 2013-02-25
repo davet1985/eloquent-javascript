@@ -2,65 +2,94 @@
   <head>
     <title>Eloquent JavaScript Examples</title>
     <script src="example.js" type="text/javascript"></script>
+    <style type="text/css">
+body {
+  font-family: Arial;
+}
+.chapter {
+  background-color: #EFEFEF;
+  border: 1px solid #CCC;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 700px;
+}
+.heading {
+  font-weight: bold;
+}
+    </style>
   </head>
   <body>
     <h2>JavaScript Examples</h2>
-    <p><strong>Chapter 2</strong></p>
-    <ol>
-      <li>
-        <a href="#" onclick="powerUp(2,10);">2 to the power of 10</a>
-      </li>
-      <li>
-        <a href="#" onclick="hashTriangle(10);">10 line hash triangle</a>
-      </li>
-      <li>
-        <a href="#" onclick="prompt2Add2();">What is 2+2?</a>
-      </li>
-      <li>
-        <a href="#" onclick="prompt2Add2v2();">What is 2+2? Until you get it correct.</a>
-      </li>
-    </ol>
-    <p><strong>Chapter 3</strong></p>
-    <ol>
-      <li>
-        <a href="#" onclick="absolute(-10);">Absolute value of -10</a>
-      </li>
-      <li>
-        <a href="#" onclick="makeGreaterThanTen(9);">Closure example: Make greaterThanTen function and call with 9</a>
-      </li>
-      <li>
-        <a href="#" onclick="makeGreaterThanTen(10);">Closure example: Make greaterThanTen function and call with 10</a>
-      </li>
-      <li>
-        <a href="#" onclick="makeGreaterThanTen(11);">Closure example: Make greaterThanTen function and call with 11</a>
-      </li>
-    </ol>
-    <p><strong>Chapter 4</strong></p>
-    <ol>
-      <li>
-        <a href="#" onclick="range(10);">Dynamically create an array of length 10 with 0-9 in it, alert the length</a>
-      </li>
-      <li>
-        <a href="#" onclick="startsWith('Hello World', 'Hello');">Does "Hello World" start with "Hello"?</a>
-      </li>
-      <li>
-        <a href="#" onclick="catsName('born 05/04/2006 (mother Lady Penelope): Red Lion, Doctor Hobbles the 3rd, Little Iroquois');">Find cats names in paragraph</a>
-      </li>
-      <li>
-        <a href="#" onclick="showCurrentDate();">Current Date</a>
-      </li>
-      <li>
-        <a href="#" onclick="extractDate('died 27/04/2006: Black Leclère');">Get Date</a>
-      </li>
-      <li>
-        <a href="#" onclick="between('bu ] boo [ bah ] gzz', '[ ', ' ]');">Find what's between "[ " and " ]" in "bu ] boo [ bah ] gzz"</a>
-      </li>
-      <li>
-        <a href="#" onclick="range(2, 4);">Dynamically create an array containing the values from 2 to 4, alert the array</a>
-      </li>
-      <li>
-        <a href="#" onclick="sum(range(2, 4));">Sum values in array containing the values from 2 to 4, alert the sum</a>
-      </li>
-    </ol>
+    <div class="chapter">
+      <span class="heading">Chapter 2</span>
+      <ol>
+        <li>
+          <a href="#" onclick="powerUp(2,10);">2 to the power of 10</a>
+        </li>
+        <li>
+          <a href="#" onclick="hashTriangle(10);">10 line hash triangle</a>
+        </li>
+        <li>
+          <a href="#" onclick="prompt2Add2();">What is 2+2?</a>
+        </li>
+        <li>
+          <a href="#" onclick="prompt2Add2v2();">What is 2+2? Until you get it correct.</a>
+        </li>
+      </ol>
+    </div>
+    <div class="chapter">
+      <span class="heading">Chapter 3</span>
+      <ol>
+        <li>
+          <a href="#" onclick="absolute(-10);">Absolute value of -10</a>
+        </li>
+        <li>
+          <a href="#" onclick="makeGreaterThanTen(9);">Closure example: Make greaterThanTen function and call with 9</a>
+        </li>
+        <li>
+          <a href="#" onclick="makeGreaterThanTen(10);">Closure example: Make greaterThanTen function and call with 10</a>
+        </li>
+        <li>
+          <a href="#" onclick="makeGreaterThanTen(11);">Closure example: Make greaterThanTen function and call with 11</a>
+        </li>
+      </ol>
+    </div>
+    <div class="chapter">
+      <span class="heading">Chapter 4</span>
+      <ol>
+        <li>
+          <a href="#" onclick="range(10);">Dynamically create an array of length 10 with 0-9 in it, alert the length</a>
+        </li>
+        <li>
+          <a href="#" onclick="startsWith('Hello World', 'Hello');">Does "Hello World" start with "Hello"?</a>
+        </li>
+        <li>
+          <a href="#" onclick="catsName('born 05/04/2006 (mother Lady Penelope): Red Lion, Doctor Hobbles the 3rd, Little Iroquois');">Find cats names in paragraph</a>
+        </li>
+        <li>
+          <a href="#" onclick="showCurrentDate();">Current Date</a>
+        </li>
+        <li>
+          <a href="#" onclick="extractDate('died 27/04/2006: Black Leclère');">Get Date</a>
+        </li>
+        <li>
+          <a href="#" onclick="between('bu ] boo [ bah ] gzz', '[ ', ' ]');">Find what's between "[ " and " ]" in "bu ] boo [ bah ] gzz"</a>
+        </li>
+        <li>
+          <a href="#" onclick="range(2, 4);">Dynamically create an array containing the values from 2 to 4, alert the array</a>
+        </li>
+        <li>
+          <a href="#" onclick="sum(range(2, 4));">Sum values in array containing the values from 2 to 4, alert the sum</a>
+        </li>
+      </ol>
+    </div>
+    <div class="chapter">
+      <span class="heading">Chapter 5</span>
+      <ol>
+        <li>
+          <a href="#" onclick="sumUsingAbstractForEach([1, 10, 100]);">Sum values in array [1, 10 ,100] using abstracted for each</a>
+        </li>
+      </ol>
+    </div>
   </body>
 </html>

@@ -119,3 +119,20 @@ function sum(numArray) {
   }
   alert(total);
 }
+
+/** CHAPTER 5 */
+//abstracted for each loop, pass anon function as action to do something to each element in the array
+function forEach(array, action) {
+  for (var i=0; i<array.length; i++) {
+    action(array[i]);
+  }
+}
+
+function sumUsingAbstractForEach(numArray) {
+  var total = 0;
+  forEach(numArray, function(number) {
+    total+=number;
+  });
+  
+  alert(total);
+}
