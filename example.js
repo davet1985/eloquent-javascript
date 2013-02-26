@@ -133,6 +133,36 @@ function sumUsingAbstractForEach(numArray) {
   forEach(numArray, function(number) {
     total+=number;
   });
-  
   alert(total);
 }
+
+//apply a function to each element in an array
+function reduce(combine, base, array) {
+  forEach(array, function (element) {
+    base = combine(base, element);
+  });
+  return base;
+}
+
+function count(test_func, array) {
+  return reduce(function(total, element) {
+    return total += ( test_func(element) ? 1 : 0 );
+  }, 0, array);
+}
+
+function equals(test) {
+  return function(element) {
+    return test === element; 
+  };
+}
+
+function countZeroes(numArray) {
+  alert(count(equals(0), numArray));
+}
+
+
+
+
+
+
+
